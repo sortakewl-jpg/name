@@ -1,8 +1,0 @@
-Weapon KingdomKey {
-    model = "kh1_kingdomkey.fbx";
-    length = 1.12f;
-    handleOffset = 0.18f;
-    damageMultiplier = 1.0f;
-    swingSpeed = 1.0f;
-    hitboxRadius = 0.22f;
-}
