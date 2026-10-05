@@ -1,0 +1,15 @@
+float CURE_HEAL_PERCENT = 0.45f;
+float CURE_CAST_TIME = 0.9f;
+int   CURE_MP_COST = 1;
+
+void CastCure() {
+    if (MP >= CURE_MP_COST) {
+        PlayAnimation("kh1_sora_cure.anim");
+        Delay(CURE_CAST_TIME);
+
+        float healAmount = MaxHP * CURE_HEAL_PERCENT;
+        HP = Clamp(HP + healAmount, 0, MaxHP);
+
+        MP -= CURE_MP_COST;
+    }
+}
